@@ -43,9 +43,14 @@ unsigned long getSumOfNTopCalories(const std::string& calories_list,
                            std::cbegin(calories) + number_of_max_calories, 0);
 }
 
-int main() {
+int main(int argc, char** argv) {
+    if (argc != 2) {
+        spdlog::error("Please provide path to input file");
+        return -1;   
+    }
+    const std::string file_path = argv[1];
     try {
-        const auto calories_list{readCaloriesFromFile("calories.txt")};
+        const auto calories_list{readCaloriesFromFile(file_path)};
         spdlog::info("Maximum number of calories for top 1: {}",
                      getSumOfNTopCalories(calories_list, 1));
         spdlog::info("Maximum number of calories for top 3: {}",

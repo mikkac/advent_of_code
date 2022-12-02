@@ -4,6 +4,9 @@ build/
 # Qt
 CMakeLists.txt.user
 
+# VSCode
+.vscode
+
 # Prerequisites
 *.d
 
