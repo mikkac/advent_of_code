@@ -9,4 +9,7 @@ conan_basic_setup()
 add_executable(d01 d01/d01.cpp)
 target_link_libraries(d01 ${CONAN_LIBS})
 
+add_executable(d02 d02/d02.cpp)
+target_link_libraries(d02 ${CONAN_LIBS})
+
 
