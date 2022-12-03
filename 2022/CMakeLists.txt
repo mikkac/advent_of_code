@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.16)
 project(aoc22)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -11,5 +11,9 @@ target_link_libraries(d01 ${CONAN_LIBS})
 
 add_executable(d02 d02/d02.cpp)
 target_link_libraries(d02 ${CONAN_LIBS})
+
+
+add_executable(d03 d03/d03.cpp)
+target_link_libraries(d03 ${CONAN_LIBS})
 
 
