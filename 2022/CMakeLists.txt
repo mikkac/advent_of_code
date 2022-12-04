@@ -12,8 +12,9 @@ target_link_libraries(d01 ${CONAN_LIBS})
 add_executable(d02 d02/d02.cpp)
 target_link_libraries(d02 ${CONAN_LIBS})
 
-
 add_executable(d03 d03/d03.cpp)
 target_link_libraries(d03 ${CONAN_LIBS})
 
+add_executable(d04 d04/d04.cpp)
+target_link_libraries(d04 ${CONAN_LIBS})
 
